@@ -1,0 +1,33 @@
+#app {
+  background-color: var(--shape-background);
+  height: 100vh;
+
+  display: grid;
+  grid-template-columns: 35.7% 64.3%;
+  
+
+  padding-inline: 30rem;
+  padding-block: 1.25rem 0.5rem;
+  gap: 1.25rem;
+
+
+  & main {
+    display: flex;
+    background-image: url(../assets/images/Background.svg);
+    background-size: cover;
+    background-position: center;
+    
+
+    border-radius: 0.75rem;
+
+    padding-inline: 2rem;
+    padding-block: 2rem 34.5rem;
+  }
+
+  aside {
+    background-color: var(--shape-body);
+
+    border-radius: 0.75rem;
+  }
+}
+
