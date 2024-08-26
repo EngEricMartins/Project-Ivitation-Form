@@ -1,0 +1,30 @@
+body {
+  background-color: #131516;
+  display: grid;
+  grid-template-columns: 44.8% 55.2%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#fixed {
+
+  display: flex;
+  border-radius: 12px;
+  margin: 1.25rem;
+
+  background-image: url(../assets/images/Background.svg);
+  background-size: cover;
+  background-position: center;
+  
+
+
+  padding-inline: 32px;
+  padding-block: 32px 552px;
+}
+
+#app {
+  border-radius: 12px;
+  margin: 1.25rem;
+  background-color: #212427;
+  
+}
