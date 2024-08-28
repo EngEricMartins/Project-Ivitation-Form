@@ -15,13 +15,13 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
 
 </head>
 
 <body>
   <div id="app">
-    
     <main id="fixed">
       <div class="fixed-box">
         <img src="assets/images/Logo.svg" alt="logo de festa" width="45.85" height="48">
@@ -33,44 +33,57 @@
     </main>
 
     <aside>
-      <h2 class="text-heading-md">Crie seu Convite</h2>
+      <h2>Crie seu convite</h2>
       <form action="#" method="post">
-        <div class="about">
+        <fieldset id="about" class="flex flex-column">
           <div class="about-image">
             <img src="assets/icons/calendar.svg" width="24" height="24" alt="icone de calendario">
-            <span>Sobre o Evento</span>
+            <legend>Sobre o Evento</legend>
           </div>
 
-          <fieldset>
+          <div class="input-wrapper">
             <label for="name">Titulo</label>
-            <input type="text" name="name" id="name" placeholder="Nome do evento">
-          </fieldset>
+            <input type="text" name="name" id="name" placeholder="Nome do evento" required>
+          </div>
 
-          <div class=" flex-between">
-            <fieldset>
+          <div class=" flex">
+            <div class="data-wrapper flex-1">
               <label for="data-start">Início</label>
-              <input type="datetime-local" name="data-start" id="data-start" required>
-            </fieldset>
+              <input  class="datetime-local" type="datetime-local" name="data-start" id="data-start" required>
+              <img src="assets/icons/calendar.svg" alt="">
+            </div>
 
-            <fieldset>
+            <div class="data-wrapper flex-1">
               <label for="data-end">Fim</label>
-              <input type="datetime-local" name="data-end" id="data-end" required>
-            </fieldset>
+              <input class="datetime" type="datetime-local" name="data-end" id="data-end" required>
+            </div>
           </div>
 
-          <div class=" flex-between">
-            <fieldset>
-              <label for="data-start">Tipo</label>
-              <input type="radio" name="data-start" id="data-start" required>
-            </fieldset>
+          <div class="flex">
+            <div class="radio-type flex flex-1">
+              <label>Tipo</label>
+              <div class="input-radio flex">
+                <input class="radio" type="radio" name="radio" id="presencial">
+                <img src="./assets/icons/building-2.svg" alt="" width="16">
+                <span>Presencial</span>
+                <input class="radio" type="radio" name="radio" id="online">
+                <img src="./assets/icons/video.svg" alt="" width="16">
+                <span>Online</span>
+              </div>
+            </div>
 
-            <fieldset>
-              <label for="link">Local</label>
-              <input type="text" name="link" id="link" required placeholder="Link ou endereço">
-            </fieldset>
+            <div class="input-wrapper flex flex-1">
+              <label for="local">Local</label>
+              <input type="url" name="local" id="local">
+            </div>
           </div>
 
-        </div>
+          <div class="textaea-wrapper">
+            <label for="description">Descrição</label>
+            <textarea name="descrição" id="description" rows="10"
+              placeholder="Escreva os detalhes do evento"></textarea>
+          </div>
+        </fieldset>
       </form>
     </aside>
 
