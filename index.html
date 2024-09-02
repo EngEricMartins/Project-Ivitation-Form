@@ -34,7 +34,7 @@
 
     <aside>
       <h2>Crie seu convite</h2>
-      <form action="#" method="post">
+      <form action="#" method="post" enctype="multipart/form-data">
         <fieldset id="about" class="flex flex-column">
           <div class="about-image">
             <img src="assets/icons/calendar.svg" width="24" height="24" alt="icone de calendario">
@@ -273,7 +273,18 @@
                 <span id="light">Claro</span>
               </div>
             </div>
-            
+
+            <div class="photo-cover">
+              <label>Foto de capa</label>
+              <div class="text-drop flex">
+                <div class="drop-wrapper flex">
+                  <input type="file" name="cover-photo" id="cover-photo" accept="image/*">
+                  <img src="assets/icons/upload.svg" alt="">
+                  <span>Selecionar</span>
+                </div>
+                <span id="drop-span">Nenhum arquivo selecionado</span>
+            </div>
+            </div>
 
           </div>
           
