@@ -93,6 +93,6 @@ label {
 ::-webkit-scrollbar-thumb {
   background-color: var(--shape-button);
   border: 1px solid #393d41;
-  border-radius: 50px;
-  
+  border-radius: 50px; 
 }
+
