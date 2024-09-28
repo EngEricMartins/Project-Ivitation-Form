@@ -96,3 +96,9 @@ label {
   border-radius: 50px; 
 }
 
+@media (width <= 31.25em) {
+  & body {
+    overflow: auto;
+  }
+}
+
