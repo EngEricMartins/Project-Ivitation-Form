@@ -30,6 +30,10 @@
     }
     .flex-1 {
       flex: 1;
+      @media (width <= 31.25em) {
+        flex: 0;
+        
+      }
     }
     .flex-column {
       flex-direction: column;
